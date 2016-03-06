@@ -16,7 +16,7 @@ module.exports.utils = function utils() {
      */
     beforeEach(function connectToDatabase(done) {
 
-        console.log('Trying to connect to: ' + databaseUrl());
+        //console.log('Trying to connect to: ' + databaseUrl());
 
         if (mongoose.connection.readyState === 0) {
             mongoose.connect(databaseUrl(), function (err) {
